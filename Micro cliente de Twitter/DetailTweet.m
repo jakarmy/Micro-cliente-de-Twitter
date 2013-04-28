@@ -1,10 +1,3 @@
-//
-//  DetailTweet.m
-//  Micro cliente de Twitter
-//
-//  Created by Francisco Riquelme on 26-04-13.
-//  Copyright (c) 2013 nobleyleal. All rights reserved.
-//
 
 #import "DetailTweet.h"
 
@@ -19,7 +12,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -71,16 +63,14 @@
     }else{
         self.view.backgroundColor = [UIColor colorWithPatternImage:userBackgroundtoDefine];
     }
-    
-    
-	// Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
+/*There's no need for this. It should have been implemented using segues in this case, since it's a simple back behavior.*/
 -(void)back:(id)sender{
     [self.navigationController popViewControllerAnimated:YES];
 }

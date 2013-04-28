@@ -1,10 +1,3 @@
-//
-//  DetailTweet.h
-//  Micro cliente de Twitter
-//
-//  Created by Francisco Riquelme on 26-04-13.
-//  Copyright (c) 2013 nobleyleal. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -15,6 +8,7 @@
     IBOutlet UIImageView *userImage;
     IBOutlet UIView *border;
 }
+// Why not using ARC ??
 @property (nonatomic,retain) NSString *userNametoDefine;
 @property (nonatomic,retain) NSString *userTwittertoDefine;
 @property (nonatomic,retain) NSString *comentTwittertoDefine;
